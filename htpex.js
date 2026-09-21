@@ -9,6 +9,10 @@ const servidor = http.createServer((req, res) => {
   if (req.method === "GET" && req.url === "/usuarios") {
     res.end("Lista de usuarios");
   }
+  
+  if (req.method === "GET" && req.url === "/productos") {
+  res.end("Lista de productos");
+}
 
 });
 
