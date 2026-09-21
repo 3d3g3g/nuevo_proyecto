@@ -1,2 +1,5 @@
-console.log("Hola, estoy usando Node.js");
-console.log("Este es mi segundo cambio");
+import { nombre, edad, carrera } from "./usuario.js";
+
+console.log(nombre);
+console.log(edad);
+console.log(carrera);
