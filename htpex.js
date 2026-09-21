@@ -12,8 +12,10 @@ const servidor = http.createServer((req, res) => {
   
   if (req.method === "GET" && req.url === "/productos") {
   res.end("Lista de productos");
-}
-
+  }
+    if (req.method === "GET" && req.url === "/login") {
+  res.end("Pagina de inicio de sesion");
+  }
 });
 
 servidor.listen(8080, () => {
