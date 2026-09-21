@@ -16,6 +16,9 @@ const servidor = http.createServer((req, res) => {
     if (req.method === "GET" && req.url === "/login") {
   res.end("Pagina de inicio de sesion");
   }
+  if (req.method === "GET" && req.url === "/perfil") {
+    res.end("Pagina de perfil");
+}
 });
 
 servidor.listen(8080, () => {
